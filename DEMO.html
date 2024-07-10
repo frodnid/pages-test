@@ -3,6 +3,8 @@
 <body>
 <h1>This is a test document to see if I can use the terminal correctly.</h1>
 <p>Check the terminal</p>
+<p id = "output1"></p>
+<p id = "output2"></p>
 
 <script>
 console.log("Seems to be working");
@@ -26,8 +28,13 @@ for (let i = 2; i < numInt; i++) {
 
 
 }
-console.log(`there are ${numList.length} prime factors of ${num}`);
-console.log('they are: ' + numList.toString());
+const str1 = `there are ${numList.length} prime factors of ${num}`;
+const str2 = 'they are: ' + numList.toString();
+console.log(str1);
+console.log(str2);
+
+document.getElementByID('output1').innerHTML = str1;
+document.getElementByID('output2').innerHTML = str2;
 </script>
 
 </body>
