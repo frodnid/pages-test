@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>This is a test document to see if I can use the terminal correctly.</h1>
+<p>Check the terminal</p>
+
+<script>
+console.log("Seems to be working");
+const num = prompt("Enter a relatively small number");
+const numInt = parseInt(num);
+const numList = [];
+
+for (let i = 2; i < numInt; i++) {
+	if (!(numInt % i)) {
+		var flag = true;
+		for (let j = 2; j < i; j++) {
+			if(!(i % j)) {
+				flag = false;
+			}
+		
+		}
+	if (flag) {numList.push(i);}
+
+	}
+
+
+
+}
+console.log(`there are ${numList.length} prime factors of ${num}`);
+console.log('they are: ' + numList.toString());
+</script>
+
+</body>
+</html>
