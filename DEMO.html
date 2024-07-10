@@ -8,7 +8,11 @@
 
 <script>
 console.log("Seems to be working");
-const num = prompt("Enter a relatively small number");
+var num = prompt("Enter a relatively small number");
+if (num > 1000000) {
+	console.log('are you trying to crash my pc?');
+	num = 0; 
+} 
 const numInt = parseInt(num);
 const numList = [];
 
